@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color generator</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="color-generator-card">
+        <div class="gradient-div">
+        </div>
+        <div class="dropdown-input">
+            <div class="dropdown-div">
+                <p>Direction</p>
+                <select id="">
+                    <option value="to top">Top</option>
+                    <option value="to right top">Right top</option>
+                    <option value="to right">Right</option>
+                    <option value="to right bottom">Right bottom</option>
+                    <option value="to bottom">Bottom</option>
+                    <option value="to left bottom">Left bottom</option>
+                    <option value="to left">Left</option>
+                    <option value="to left top">Left top</option>
+
+                </select>
+            </div>
+            <div class="color-input-div">
+                <p>Colors</p>
+                <input type="color" id="color1" name="color1" value="#6c757d">
+                <input type="color" id="color2" name="color2" value="#8a6cff">
+            </div>
+        </div>
+            <div class="color-code-div"> background-image: linear-gradient(to left bottom,#4416fe,#52bc24);</div>
+
+        <div class="buttons-div">
+            <button id="refresh-button">Refresh colors</button>
+            <button id="copy-button">Copy Code</button>
+        </div>
+    </div>
+    <script src="src/script.js"></script>
+</body>
+</html>
