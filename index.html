@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
+    <h1>Ultimate Color-Generator</h1>
     <div class="color-generator-card">
-        <div class="gradient-div">
+        <div class="gradient-div" id="gradient-div">
         </div>
         <div class="dropdown-input">
             <div class="dropdown-div">
                 <p>Direction</p>
-                <select id="">
+                <select class="dropdown">
                     <option value="to top">Top</option>
                     <option value="to right top">Right top</option>
                     <option value="to right">Right</option>
@@ -27,11 +28,11 @@
             </div>
             <div class="color-input-div">
                 <p>Colors</p>
-                <input type="color" id="color1" name="color1" value="#6c757d">
-                <input type="color" id="color2" name="color2" value="#8a6cff">
+                <input type="color" class="colors" id="colors" name="color1" value="#a34e40">
+                <input type="color" class="colors" id="colors" name="color2" value="#556e6b">
             </div>
         </div>
-            <div class="color-code-div"> background-image: linear-gradient(to left bottom,#4416fe,#52bc24);</div>
+            <div class="color-code-div" id="color-code"> background: linear-gradient(to left bottom,#4416fe,#52bc24);</div>
 
         <div class="buttons-div">
             <button id="refresh-button">Refresh colors</button>
